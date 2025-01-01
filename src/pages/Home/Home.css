@@ -1,0 +1,32 @@
+.home{
+    height: 100svh;
+    width: 100svw;
+    background: linear-gradient(-40deg,rgba(255, 255, 255, 0.266),rgb(0, 0, 0),rgba(255, 255, 255, 0.215));
+    animation: fadein;
+    animation-duration: 3s;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.home::-webkit-scrollbar{
+    width: 10px;
+}
+.home::-webkit-scrollbar-track{
+    background:trasparent ;
+}
+.home::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg,white,black);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.home::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(270deg,rgba(255, 255, 255, 0.186),black);
+}

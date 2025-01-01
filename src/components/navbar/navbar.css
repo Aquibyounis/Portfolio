@@ -1,0 +1,79 @@
+.nav {
+    height: 6svh;
+    width: 30svw;
+    margin-top: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background: black;
+    box-shadow: 0px 0px 25px -10px whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 10;
+    position: fixed;
+  }
+  .nav:hover{
+    box-shadow: 0px 0px 25px -5px white;
+  }
+  
+  .fa-solid {
+    color: aliceblue;
+    font-size: 20px;
+  }
+  
+  .fa-solid:hover {
+    scale: 1.35;
+    color: black;
+    text-shadow: 0px 0px 10px white;
+    transition-duration: 0.5s;
+  }
+  
+  @media (max-width: 1080px) {
+    .nav {
+      width: 60%;
+      position: absolute;
+    }
+  }
+  
+  @media (max-width: 720px) {
+    .nav {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav {
+      width: 80%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 1%;
+    }
+    .fa-solid:hover {
+      scale: 1.5;
+      color: rgb(0, 35, 58);
+      text-shadow: 0px 0px 5px whitesmoke;
+    }
+  }
+  
+  /* Dark Mode Styles */
+  .app.dark {
+    background-color: #282828;
+    color: rgb(0, 0, 0);
+  }
+  
+  .app.dark .nav {
+    background-color: #ffffff;
+  }
+  
+  .app.dark .fa-solid {
+    color: rgb(0, 0, 0);
+  }
+  .app.dark .fa-solid:hover{
+    color: rgb(85, 85, 85);
+    text-shadow: 0px 0px 10px black;
+  }
+  

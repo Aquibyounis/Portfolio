@@ -1,0 +1,123 @@
+.notice{
+    margin-top: 40svh;
+    color: aliceblue;
+    height: 70svh;
+    margin-bottom: 10svh;
+}
+
+.board{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px -15px white;
+    transform: translate(-50%,-50%);
+    border: 2px solid white;
+    width: 85%;
+    height: 100%;
+    background: linear-gradient(145deg,black,rgba(255, 255, 255, 0.522));
+}
+.board h1{
+    font-size:3em;
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    text-shadow: 0px 0px 10px black;
+}
+.notes{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    gap: 5%;
+}
+.boxes{
+    height: 20em;
+    width: 20em;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 0px 10px -3px rgb(0, 0, 0);
+}
+.boxes:hover{
+    box-shadow: 0px 0px 10px -3px rgb(255, 255, 255);
+    transition-duration: 1s;
+    scale: 1.05;
+    cursor: pointer;
+}
+.boxes p{
+    font-size: 1.3em;
+}
+.pin{
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0px 0px 10px black;
+}
+.pin:hover{
+    text-shadow: none;
+    color: white;
+    scale: none;
+}
+
+@media (max-width:480px) {
+    .notice{
+        height: 90svh;
+        width: 100%;
+    }
+    .board{
+        box-shadow: none;
+        border: none;
+        background: transparent;
+    }
+    .board h1{
+        font-size: 2em;
+        text-align: start;
+        font-weight: 700;
+    }
+    .notes{
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        position: relative;
+        top: 60%;
+    }
+    .boxes{
+        height: 30%;
+        width: 100%;
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px -5px white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .pin{
+        position: relative;
+        top: 5%;
+        text-align: center;
+        width: 100%;
+        text-shadow: 0px 0px 10px black;
+    }
+    .pin:hover{
+        text-shadow: none;
+        color: white;
+        scale: none;
+    }
+    .boxes p{
+        font-size: 1.2em;
+        text-align: end;
+        padding-right: 5%;
+    }
+}

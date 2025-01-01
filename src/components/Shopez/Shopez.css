@@ -1,0 +1,89 @@
+.shopez-card{
+  margin-top: 35svh;
+}
+
+.shopez-front{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 90%;
+  width: 80%;
+}
+.leftshop{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.shopezimg{
+  border: 3px solid white;
+  border-radius: 25px;
+}
+.rightshop{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 3em;
+}
+
+
+
+.shopez-back{
+  height: 80svh;
+  width: 90%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-matter{
+  height: 90%;
+  width: 50%;
+  display: flex;
+  align-items: self-start;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.3em;
+}
+.right-matter{
+  height: 90%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.right-matter p{
+  font-size: 1.5em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.link{
+  color: cyan;
+  text-decoration: none;
+}
+.items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+.items p{
+  font-weight: 600;
+  color: cyan;
+  width: 40svw;
+  align-items: center;
+  justify-content: center;
+}

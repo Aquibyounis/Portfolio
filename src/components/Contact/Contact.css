@@ -1,0 +1,90 @@
+.contact{
+    color: aliceblue;
+    overflow-y: hidden;
+    height: 60svh;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+    animation: fadein;
+}
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.leftcon{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10%;
+}
+.rightcon{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    font-size: 1.1em;
+}
+
+.m p{
+    font-size: 1.5em;
+}
+.m a{
+    color: cyan;
+    text-decoration: none;
+}
+
+@media (max-width:480px) {
+    .contact{
+        height: 80svh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .rightcon{
+        font-size: 1.8em;
+        width: 90%;
+    }
+    .leftcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        gap: 0%;
+    }
+    .heading{
+        justify-content: flex-start;
+    }
+    .m{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+    }
+    .email,.phone{
+        width: 90%;
+    }
+    .phone p{
+        font-size: 1.3em;
+        text-align: end;
+    }
+}
