@@ -2,6 +2,7 @@
     color: aliceblue;
     height: 70svh;
     width: 100%;
+    padding-top: 8%;
 }
 .inner{
     height: 100%;
@@ -14,28 +15,41 @@
     align-items: center;
     justify-content: center;
 }
-.languages,.hr{
+.languages{
     height: 100%;
     width: 50%;
 }
 .languages{
+    display: flex;
+    align-items: center;
     flex-direction: column;
+    justify-content: center;
     font-size: 2em;
+}
+.languages ul{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
 }
 .languages ul li{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style: circle;
     list-style-position: outside;
+    list-style: none;
     padding-left: 2svw;
     font-size: 1.1em;
     color:cyan;
 }
 
 .headinglan{
+    height: 100%;
+    width: 50%;
     display: flex;
-    font-size: 1.2em;
-    align-items: start;
-    justify-content: start;
+    font-size: 3em;
+    align-items: center;
+    justify-content: center;
 }
 .headinglan h1{
     font-size: 2.2em;
@@ -43,35 +57,4 @@
 }
 .headinglan h3{
     padding-left: 10px;
-}
-
-.hr{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.hobbies{
-    font-weight: 600;
-    font-size: 2em;
-    padding-top: 10%;
-    height: 80%;
-    width: 100%;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    flex-direction: column;
-}
-.resume{
-    height: 20%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    font-size: 4em;
-}
-.resume2{
-    text-decoration: none;
-    color: cyan;
-    font-weight: 700;
 }

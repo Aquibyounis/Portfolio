@@ -1,0 +1,41 @@
+.skills{
+    margin-top:10%;
+    height: 60svh;
+    margin-bottom: 10%;
+}
+.skillinner{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.skillright{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skillright h1{
+    font-size: 6em;
+}
+.skillleft{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hobbies p{
+    font-size: 2em;
+    width: 25svw;
+    font-weight: 600;
+    color: cyan;
+}
